@@ -1,0 +1,61 @@
+
+
+INSERT INTO `category` (`category_id`, `name`) VALUES
+(1, 'Thời trang nam'),
+(2, 'Thời trang nữ'),
+(3, 'Điện thoại di động'),
+(4, 'Máy tính xách tay'),
+(5, 'Thực phẩm'),
+(6, 'Sức khỏe và làm đẹp'),
+(7, 'Điện tử gia dụng'),
+(8, 'Ô tô'),
+(9, 'Mô tô'),
+(10, 'Đồ chơi trẻ em');
+
+
+
+
+INSERT INTO `product` (`id`, `description`, `image_name`, `name`, `price`, `weight`, `category_id`) VALUES
+(1, 'Mô tả sản phẩm 1', '22.jpg', 'Sản phẩm 1', 100000, 0.5, 1),
+(2, 'Mô tả sản phẩm 2', '22.jpg', 'Sản phẩm 2', 200000, 1, 2),
+(3, 'Mô tả sản phẩm 3', '22.jpg', 'Sản phẩm 3', 300000, 1.5, 3),
+(4, 'Mô tả sản phẩm 4', '22.jpg', 'Sản phẩm 4', 400000, 2, 4),
+(5, 'Mô tả sản phẩm 5', '22.jpg', 'Sản phẩm 5', 500000, 2.5, 5),
+(6, 'Mô tả sản phẩm 6', '22.jpg', 'Sản phẩm 6', 600000, 3, 6),
+(7, 'Mô tả sản phẩm 7', '22.jpg', 'Sản phẩm 7', 700000, 3.5, 7),
+(8, 'Mô tả sản phẩm 8', '22.jpg', 'Sản phẩm 8', 800000, 4, 8),
+(9, 'Mô tả sản phẩm 9', '22.jpg', 'Sản phẩm 9', 900000, 4.5, 9),
+(10, 'Mô tả sản phẩm 10', '22.jpg', 'Sản phẩm 10', 1000000, 5, 10),
+(11, 'Mô tả sản phẩm 11', '22.jpg', 'Sản phẩm 11', 1100000, 5.5, 1),
+(12, 'Mô tả sản phẩm 12', '22.jpg', 'Sản phẩm 12', 1200000, 6, 2),
+(13, 'Mô tả sản phẩm 13', '22.jpg', 'Sản phẩm 13', 1300000, 6.5, 3),
+(14, 'Mô tả sản phẩm 14', '22.jpg', 'Sản phẩm 14', 1400000, 7, 4),
+(15, 'Mô tả sản phẩm 15', '22.jpg', 'Sản phẩm 15', 1500000, 7.5, 5);
+
+
+
+INSERT INTO `roles` (`id`, `name`) VALUES
+(1, 'admin'),
+(3, 'guest'),
+(2, 'user');
+
+
+
+INSERT INTO `users` (`id`, `email`, `first_name`, `last_name`, `password`) VALUES
+(1, 'admin@example.com', 'Admin', 'User', '123456'),
+(2, 'user1@example.com', 'User', 'One', '123456'),
+(3, 'user2@example.com', 'User', 'Two', '123456');
+
+
+
+INSERT INTO `user_role` (`user_id`, `role_id`) VALUES
+(1, 1),
+(2, 2),
+(3, 2),
+(4, 1),
+(4, 2),
+(5, 1),
+(5, 2),
+(6, 1),
+(6, 2);
+
